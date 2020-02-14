@@ -9,9 +9,46 @@ body{
 
 .main{
     margin: 60px;
-    border-radius: 5%;
 }
 
+.submit{
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    line-height: 25px;
+    padding: 10px, 20px, 20px, 20px; 
+}
+
+#textbox{
+    width: 500px;
+    height: 50px;
+    resize: none;
+
+}
+
+#sign{
+    color: #007CFF;
+}
+
+#submit{
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    background-color: #007CFF;
+    border: none;
+}
+
+#submit:hover{
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+}
+
+#submit:active{
+    background-color: #007Cdd;
+}
 
 .header{
     font-weight: bold;
