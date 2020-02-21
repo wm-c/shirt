@@ -13,6 +13,23 @@
 
     <title>Shirt</title>
     <link rel="stylesheet" type="text/css" href="sweater.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script type='text/javascript'>    
+        var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1afj4Hpn-YytvBKlId-e0Htre0zPRS3rnsw1OIe8MhQc/edit?usp=sharing';
+      
+        function init() {
+          Tabletop.init( { key: publicSpreadsheetUrl,
+                           callback: showInfo,
+                           simpleSheet: true } )
+        }
+      
+        function showInfo(data, tabletop) {
+          alert('Successfully processed!')
+          console.log(data);
+        }
+      
+        window.addEventListener('DOMContentLoaded', init)
+      </script>
     
 </head>
 <body>
@@ -23,16 +40,23 @@
         </div>
         <div class="submit">
             <h3 id="sign">Sign Here</h3>
-            <textarea id="textbox" placeholder="Type a message to be displayed on the shirt" maxlength="150"></textarea>
+            <!-- <textarea id="textbox" maxlength="150"></textarea> -->
             <br>
-            <button id="submit" onclick="getText()">Sign The Shirt</button>
+
+            <form class="form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScvWGXg4CvGfyA2fbzPpDJnzhLtFzhL1ImhGerH-iyeOLMefw/formResponse" target="none">
+
+
+                <input id="textContainer" name="entry.36277984" type="text" placeholder="Type a message to be displayed on the shirt" required />
+    
+      
+      
+                <input id="submit" type="submit" value="Send"  />
+      
+          </form>
+<!-- // https://docs.google.com/spreadsheets/d/1afj4Hpn-YytvBKlId-e0Htre0zPRS3rnsw1OIe8MhQc/edit?usp=sharing -->
         </div>
     </div>
-    <div>
-        <h5>I'm Take</h5>
 
-        
-    </div>
 </body>
     <script src="getInput.js"></script>
 </html>
