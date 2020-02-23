@@ -19,7 +19,7 @@ function showInfo(data, tabletop) {
 
     x1.forEach(element => {
         
-        if(element.SignMyShirt == "REMOVED" || element.SignMyShirt == prior){
+        if(element.SignMyShirt == "REMOVED" || element.SignMyShirt.toUpperCase() == prior.toUpperCase()){
             return;
         }
 
