@@ -5,6 +5,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158585255-1"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script src="submit.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -31,13 +32,10 @@
             <br>
 
             
-            <form class="form" action="javascript: postToGoogle()">
+            <form class="form" action="javascript: submit()">
 
 
                 <input id="textContainer" type="text" placeholder="Type a message to be displayed on the shirt" required />
-    
-      
-      
                 <input id="submit" type="submit" value="Send"  />
       
           </form> 
