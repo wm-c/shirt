@@ -5,18 +5,21 @@ var cont = true;
 var prior = "";
 
 function init() {
+    
     Tabletop.init({
         key: publicSpreadsheetUrl,
         callback: showInfo,
         reverse: true
     })
+    document.getElementById("comment").innerHTML = "";
+   
 }
 
 function showInfo(data, tabletop) {
     // alert('Successfully processed!')
     // x = data;
     x1 = data.Form_Responses_1.elements.reverse();
-
+    
     x1.forEach(element => {
         
         if(element.SignMyShirt == "REMOVED" || element.SignMyShirt.toUpperCase() == prior.toUpperCase()){
