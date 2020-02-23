@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
+
+<!-- This is the anti spam cat, please don't spam me -->
+        <!--     ^~^  ,
+        ('Y') )
+        /   \/ 
+       (\|||/) -->
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158585255-1"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-    <script src="submit.js"></script>
+    <script src="javascripts//submit.js"></script>
+    <script src='javascripts/dataReader.js'></script>
+    <script src="javascripts/sendTo.js"></script>
+    <link rel="stylesheet" type="text/css" href="sweater.css">
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -13,35 +22,35 @@
 
         gtag('config', 'UA-158585255-1');
     </script>
-    <script src="sendTo.js"></script>
+    
     <title>Shirt</title>
-    <script src='dataReader.js'></script>
-    <link rel="stylesheet" type="text/css" href="sweater.css">
+    
+    
     
     
     
 </head>
 <body>
     <div class="main">
+        
         <div class="header">
             <h1>https://wm-c.dev/shirt</h1>
             <h3>I'm William Meathrel of Team 5024, feel free to leave a message and digitally sign my Sweater</h3>
         </div>
-        <div class="submit">
-            <h3 id="sign">Sign Here</h3>
-            <br>
+        <div class="main_text">
+            <div id="sign_here">
+                <h3 id="sign">Sign Here</h3>
+                <br>
 
-            
-            <form class="form" action="javascript: submit()">
-
-
-                <input id="textContainer" type="text" placeholder="Type a message to be displayed on the shirt" required />
-                <input id="submit" type="submit" value="Send"  />
-      
-          </form> 
+                
+                <form class="form" action="javascript: submit()">
+                    <input id="textContainer" type="text" placeholder="Type a message to be displayed on the shirt" autocomplete="off" required />
+                    <input id="submit" type="submit" value="Send"  />
+                </form>
+            </div>
         <div id="comment">
+        
         </div>
     </div>
-
 </body>
 </html>

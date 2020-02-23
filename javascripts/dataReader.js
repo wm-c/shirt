@@ -16,8 +16,6 @@ function init() {
 }
 
 function showInfo(data, tabletop) {
-    // alert('Successfully processed!')
-    // x = data;
     x1 = data.Form_Responses_1.elements.reverse();
     
     x1.forEach(element => {
